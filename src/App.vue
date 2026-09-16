@@ -1,6 +1,6 @@
 <template>
   <div>
-    hello vue3-project
+    <RouterView/>
   </div>
 </template>
 
