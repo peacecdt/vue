@@ -1,6 +1,6 @@
 <template>
-    <div>
-        我是home
+    <div class="bg">
+
     </div>
 </template>
 
