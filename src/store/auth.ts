@@ -32,7 +32,7 @@ export const useAuthStore = defineStore("user", {
                 sessionStorage.setItem("menu", JSON.stringify(menulist));
                 router.push("/");
             }catch (error) {
-                throw new Error("登录失败");
+                //throw new Error("登录失败");
             }
         }
     }

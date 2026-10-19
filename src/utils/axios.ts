@@ -22,6 +22,13 @@ service.interceptors.request.use((config:InternalAxiosRequestConfig) => {
 // 响应拦截器
 service.interceptors.response.use((response:AxiosResponse) => {
     console.log("响应拦截器",response)
+    if(response.data.code !== 200){
+        ElNotification.error({
+            title: 'Error',
+            message: response.data.message,
+            type: 'error',
+        });
+    } 
     // 对响应数据做点什么
     return response.data;
 },(error:AxiosError) => {
